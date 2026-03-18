@@ -1,0 +1,20 @@
+project:
+  name: ""          # e.g. "TabNet Fraud Detection"
+  question: ""      # e.g. "Can TabNet outperform XGBoost on tabular fraud data?"
+  status: "bootstrap"   # bootstrap | inner-loop | outer-loop | concluding
+  started: ""       # YYYY-MM-DD
+
+hypotheses:
+  - id: H1
+    claim: ""
+    status: untested    # untested | testing | confirmed | refuted | revised
+    priority: high      # high | medium | low
+
+evaluation:
+  primary_metric: ""         # e.g. "ROC-AUC"
+  secondary_metrics: []      # e.g. ["accuracy", "f1-score"]
+  validation: ""             # e.g. "3-fold stratified CV"
+  baseline_target: null      # e.g. 0.95
+
+current_direction: "bootstrap"   # bootstrap | deepen | broaden | pivot | conclude
+last_updated: ""

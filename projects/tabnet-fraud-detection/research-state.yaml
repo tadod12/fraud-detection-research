@@ -1,0 +1,35 @@
+project:
+  name: "TabNet Bank Fraud Detection"
+  question: "Can TabNet provide an interpretable, high-performing deep learning solution for bank transaction fraud detection on tabular data?"
+  status: "bootstrap"
+  started: "2026-03-18"
+
+hypotheses:
+  - id: H1
+    claim: "TabNet outperforms general-purpose DL models (DNN, LSTM, GRU, CNN1D) on tabular fraud data due to its attention-based sparse feature selection"
+    status: untested
+    priority: high
+
+  - id: H2
+    claim: "SMOTE significantly improves fraud detection performance by addressing class imbalance"
+    status: untested
+    priority: medium
+
+  - id: H3
+    claim: "TabNet's interpretability (feature masks) provides actionable insights for fraud analysts"
+    status: untested
+    priority: medium
+
+  - id: H4
+    claim: "TabNet can match or exceed traditional ML models (XGBoost, LightGBM) on the same fraud dataset"
+    status: untested
+    priority: high
+
+evaluation:
+  primary_metric: "ROC-AUC"
+  secondary_metrics: ["accuracy", "precision", "recall", "f1-score"]
+  validation: "3-fold stratified cross-validation"
+  baseline_target: 0.9739  # from Prashanth et al. 2026
+
+current_direction: "bootstrap"
+last_updated: "2026-03-18"
