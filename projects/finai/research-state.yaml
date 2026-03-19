@@ -1,0 +1,35 @@
+project:
+  name: "FinAI Real-Time Fraud Detection"
+  question: "Can a three-tiered deep learning architecture (stream processing + DL engine + self-adaptive learning) achieve real-time fraud detection at scale (>10K TPS, <50ms latency) while maintaining high precision/recall?"
+  status: "bootstrap"
+  started: "2026-03-20"
+
+hypotheses:
+  - id: H1
+    claim: "A streaming DL pipeline (Kafka + Spark + neural network) can process >10K transactions per second with <50ms average latency for fraud scoring"
+    status: untested
+    priority: high
+
+  - id: H2
+    claim: "The self-adaptive learning module enables the model to handle concept drift without full retraining, maintaining detection performance over time"
+    status: untested
+    priority: high
+
+  - id: H3
+    claim: "The FinAI architecture achieves higher precision (>94%) and recall (>91%) compared to traditional rule-based systems and batch-processed ML models"
+    status: untested
+    priority: high
+
+  - id: H4
+    claim: "Ghost batch normalization and attention mechanisms in the DL engine improve fraud detection accuracy on highly imbalanced transaction data"
+    status: untested
+    priority: medium
+
+evaluation:
+  primary_metric: "precision"
+  secondary_metrics: ["recall", "f1-score", "latency_ms", "throughput_tps", "false_positive_rate"]
+  validation: "time-based train/test split with streaming evaluation"
+  baseline_target: 0.943  # from Taralkar 2025 — 94.3% precision
+
+current_direction: "bootstrap"
+last_updated: "2026-03-20"
