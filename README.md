@@ -34,7 +34,7 @@ A multi-project research workspace for AI/ML paper study, experimentation, and w
 
 | Project | Status | Focus |
 |---|---|---|
-| [tabnet-fraud-detection](projects/tabnet-fraud-detection/) | Bootstrap | TabNet for bank fraud detection |
+| [tabnet](projects/tabnet/) | Bootstrap | TabNet for bank fraud detection |
 
 ## Quick Start — New Project
 
